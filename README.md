@@ -1,6 +1,6 @@
 # O365_And_Azure
 
-Get-O365Rules.ps1
+Get-O365Rules.ps1 - https://www.crypsisgroup.com/powershell-malicious-o365-email-rules/
 ------------------------------------------
 
 Collect all current O365 email rules from an environment based on provided credentials, and convert them into json.
