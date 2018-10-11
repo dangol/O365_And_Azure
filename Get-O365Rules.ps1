@@ -213,7 +213,7 @@ color_out "[+] User list created!" "Green"
 
 $userCount = $u_array.count
 
-color_out "[+] Number users in list: $userCount" "Green"
+color_out "[+] Number of users in list: $userCount" "Green"
 
 color_out "[+] Collecting any Forwarding Email Addresses" "Green"
 
@@ -244,6 +244,8 @@ For ($i=0; $i -lt $userCount; $i++)
 	$ErrorActionPreference = "Stop"
 	While($True)
 	{
+		#Small Sleep
+		Start-Sleep -m 500
 		try
 		{
 			if(!(Get-PSSession | Where { $_.ConfigurationName -eq "Microsoft.Exchange" -And $_.State -eq "Opened"}))
