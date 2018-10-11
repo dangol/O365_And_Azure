@@ -3,7 +3,7 @@
 Get-O365Rules.ps1
 ------------------------------------------
 
-Collect all current O365 email rules from an environment (based on provided credentials, and convert them into json.
+Collect all current O365 email rules from an environment based on provided credentials, and convert them into json.
 
 All parameters are optional
 
