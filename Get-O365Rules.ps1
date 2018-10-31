@@ -16,7 +16,7 @@
 Param(
 	[Parameter(Mandatory=$false)]
 	[alias("m")]
-    $mfa,
+    [switch]$mfa,
 	
 	[Parameter(Mandatory=$false)]
 	[alias("")]
@@ -171,7 +171,7 @@ else
 	{
 		try
 		{
-			$Session_Import = Connect-EXOPSSession -SessionOption $SessionOptions -DisableNameChecking  | Out-Null
+			$Session_Import = Connect-EXOPSSession -DisableNameChecking  | Out-Null
 		}
 		catch
 		{
