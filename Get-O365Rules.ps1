@@ -195,12 +195,12 @@ if($user)
 	}
 	elseif($user.contains(","))
 	{
-		Write-LogFile "User parameter detected as csv string"
+		color_out "[+] User parameter detected as csv string" "Green"
 		$u_array = $user.split(",")
 	}
 	else
 	{
-		Write-LogFile "User parameter detected as single user string"
+		color_out "[+} User parameter detected as single user string" "Green"
 		$u_array = @($user)
 	}	
 }
