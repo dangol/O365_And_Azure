@@ -197,7 +197,7 @@ if($user)
 	}
 	else
 	{
-		color_out "[+} User parameter detected as single user string" "Green"
+		color_out "[+] User parameter detected as single user string" "Green"
 		$u_array = @($user)
 	}	
 }
