@@ -169,11 +169,12 @@ else
 	
 		try
 		{
-			Connect-EXOPSSession -DisableNameChecking  | Out-Null
+			Connect-EXOPSSession
 		}
 		catch
 		{
 			color_out "[-] ERROR!: Failed to create O365 PSSession`n" "Red"
+			exit
 		}
 	
 		color_out "[+] Credentials are valid!" "Green"
