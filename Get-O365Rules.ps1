@@ -167,21 +167,17 @@ else
 	. "$CreateEXOPSSession\CreateExoPSSession.ps1"
 	cd $cwd
 	
-	do
-	{
 		try
 		{
-			$Session_Import = Connect-EXOPSSession -DisableNameChecking  | Out-Null
+			Connect-EXOPSSession -DisableNameChecking  | Out-Null
 		}
 		catch
 		{
 			color_out "[-] ERROR!: Failed to create O365 PSSession`n" "Red"
 		}
-	}While(!($Session_Import))
 	
-	color_out "[+] Credentials are valid!" "Green"
+		color_out "[+] Credentials are valid!" "Green"
 	
-    O365_permission_check $Session_Import
 }
 
 if($user)
