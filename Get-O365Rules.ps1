@@ -14,12 +14,12 @@
 
 # Parameters
 Param(
-	[Parameter(Mandatory=$false)]
-	[alias("m")]
+    [Parameter(Mandatory=$false)]
+    [alias("m")]
     [switch]$mfa,
 	
-	[Parameter(Mandatory=$false)]
-	[alias("")]
+    [Parameter(Mandatory=$false)]
+    [alias("")]
     $user,
 
     [Parameter()]
