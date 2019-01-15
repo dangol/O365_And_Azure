@@ -290,7 +290,7 @@ For ($i=0; $i -lt $userCount; $i++)
 			continue
 		}
 		
-		if ($rules.length -gt 0) 
+		if ($rules) 
 		{
 			foreach($rule in $rules)
 			{
