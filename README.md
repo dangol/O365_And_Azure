@@ -1,7 +1,3 @@
-# Warning
-
-As it stands today, this script uses Office 365 Basic Authentication which is being turned off on October 14 2020. Please review the script carefully and change it if it is failing beyond this date.
-
 # O365_And_Azure
 
 Get-O365Rules.ps1
